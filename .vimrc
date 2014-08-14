@@ -51,3 +51,9 @@ au BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
+" OS X Clipboard support
+set clipboard=unnamed
+map <F2> :.w !pbcopy<CR><CR>
+map <F3> :r !pbpaste<CR>
+
+
