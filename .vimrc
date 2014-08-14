@@ -1,5 +1,9 @@
 " based on github.com/hukl/dotfiles
 
+" Pathogen Plugin
+runtime bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 " Backspace
 set backspace=indent,eol,start
 
