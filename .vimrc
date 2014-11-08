@@ -12,6 +12,7 @@ syntax on
 filetype plugin indent on
 
 " add support for color
+color smyck
 
 " line numbers
 set number
@@ -52,7 +53,6 @@ set nofoldenable
 " set filetypes
 au FileType make set noexpandtab
 au BufNewFile,BufRead *.json set ft=javascript
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " OS X Clipboard support
