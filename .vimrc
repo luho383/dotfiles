@@ -62,6 +62,15 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=r
 " (taken from hukl) make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
+" open window on other side at vertical split
+let g:netrw_altv = 1
+" open in last window
+let g:netrw_browse_split = 4
+" tree-view
+let g:netrw_liststyle = 3
+" hide banner
+let g:netrw_banner = 0
+
 " OS X Clipboard support
 set clipboard=unnamed
 map <F2> :.w !pbcopy<CR><CR>

@@ -6,3 +6,6 @@ for config_file ($ZSH/*.zsh) source $config_file
 # Load and run compinit
 autoload -U compinit
 compinit -i
+
+# brew path
+export PATH="/usr/local/sbin:$PATH"
